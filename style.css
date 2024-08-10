@@ -1,0 +1,65 @@
+/* rain animation css */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #0e0e0e;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvMougm1_oX1-69X-1WrSACPE6Pb35YwXGaA&s");
+    background-size: cover;  /* Makes sure the image covers the whole background */
+    background-repeat: no-repeat;
+}
+.rain {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 20px;
+    background: rgba(6, 6, 226, 0.893);
+    animation: fall linear infinite;
+}
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+h1{
+    color:blueviolet; text-align: center;
+    font-size: x-large;
+    font-weight: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: Lato Medium;
+}
+
+/* search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;;
+    
+}
+.search-box {
+    position: relative;
+    width: 650px;
+}
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 18px;
+    border: 2px solid #cccccc;
+    border-radius: 25px;
+    font-weight: bold; /* Make text bold */
+    color: #000; /* Set text color */
+    font-size: 15px; /* Increase text size */
+}
+.search-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search-box button img {
+    width: 25px;
+    height: 25px;
+}
